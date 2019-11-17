@@ -40,3 +40,20 @@ for (let i=0; i< arr.length; i++){
     }
 }
 console.log(arr);
+
+console.log("TASK 1.4")
+
+let stringOne = prompt();
+let stringTwo = prompt();
+let constantaZero = 0;
+for( let i = 0; i < stringOne.length; i++){
+    for ( let q = 0; q < stringTwo.length; q++){
+        if (stringOne[i] == stringTwo[q]){
+            constantaZero++;
+        }
+    }
+}
+let percent = constantaZero / ( stringOne.length + stringTwo.length) * 100;
+console.log("string one" + stringOne);
+console.log("string two" + stringTwo);
+console.log("percentage of identical letters " + percent + " %");
